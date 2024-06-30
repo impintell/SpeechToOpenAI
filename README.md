@@ -1,11 +1,11 @@
-# SpeechToOpenAI
-For Installation
-Go to your Visual Studio solution Explorer area
-Right click on solution name
-Select "Open with Terminal"
-Type this command on terminal
-npm install
-Start project with "Start" button or type this command
-node app.js
+# <p>SpeechToOpenAI</p>
+<p>For Installation : </p>
+<p>Go to your Visual Studio solution Explorer area</p>
+<p>Right click on solution name</p>
+<p>Select "Open with Terminal"</p>
+<p>Type this command on terminal</p>
+<code>npm install</code>
+<p>Start project with "Start" button or type this command</p>
+<code>node app.js</code>
 
 
