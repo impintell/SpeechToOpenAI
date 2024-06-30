@@ -1,4 +1,4 @@
-# <p>SpeechToOpenAI</p>
+# <p>Speech To OpenAI</p>
 <p>For Installation : </p>
 <p>Go to your Visual Studio solution Explorer area</p>
 <p>Right click on solution name</p>
