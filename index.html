@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Speech To OpenAI</title>
+    <style>
+        table {
+            width: 1000px; /* İki sütun olduğu için genişlik toplamı 600px (300px + 300px) */
+            height: 500px;
+        }
+
+        td {
+            width: 500px; /* Her sütunun genişliği 300px */
+            height: 500px;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+            background-color: #000000;
+            color: #ffffff;
+            border: 3px;
+            border-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    
+    <center>
+        <table>
+            <tr>
+                <th>User</th>
+                <th>System</th>
+            </tr>
+            <tr>
+                <td><p id="usermessage"></p></td>
+                <td><p id="systemmessage"></p></td>
+            </tr>
+
+            <!-- Diğer satırlar buraya eklenebilir -->
+        </table>
+    </center>
+    <script type="module" src="index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+D:\SpeechToOpenAI\obj\Debug\SpeechToOpenAI.njsproj.CoreCompileInputs.cache
+D:\SpeechToOpenAI\bin\Microsoft.NodejsTools.WebRole.dll
+D:\SpeechToOpenAI\obj\Debug\SpeechToOpenAI.njsproj.AssemblyReference.cache

@@ -1,2 +1,5 @@
 # SpeechToOpenAI
-Conversational chat with ChatGPT with Node.js
+npm init -y
+npm install express --save
+npm install cors
+

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34902.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "SpeechToOpenAI", "SpeechToOpenAI.njsproj", "{31A94731-94D2-464A-AE08-98C23F2E42D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31A94731-94D2-464A-AE08-98C23F2E42D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31A94731-94D2-464A-AE08-98C23F2E42D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31A94731-94D2-464A-AE08-98C23F2E42D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31A94731-94D2-464A-AE08-98C23F2E42D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {544D0D9F-DBE6-4062-858B-954633FDAA3C}
+	EndGlobalSection
+EndGlobal
