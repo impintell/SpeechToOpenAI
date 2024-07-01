@@ -1,7 +1,7 @@
 {
   "OPENAIAPI": "YOUR_OPENAI_API_KEY",
   "VOICE": "onyx",
-  "LANGUAGE": "tr-TR",
+  "LANGUAGE": "en-GB",
   "SYSTEMMESSAGE": "You are a helpful assistant."
 }
 
