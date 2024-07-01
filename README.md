@@ -8,19 +8,20 @@
 <p>Start project with "Start" button or type this command</p>
 <pre>node app.js</pre>
 <h3>Regulation</h3>
+<p>app.json</p>
 <pre>
   {
-  "OPENAIAPI": "YOUR_OPENAI_API_KEY",
-  "VOICE": "onyx",
-  "LANGUAGE": "en-GB",
-  "SYSTEMMESSAGE": "You are a helpful assistant."
+    "OPENAIAPI": "YOUR_OPENAI_API_KEY",
+    "VOICE": "onyx",
+    "LANGUAGE": "en-GB",
+    "SYSTEMMESSAGE": "You are a helpful assistant."
 }
 </pre>
 <h3>OPENAIAPI</h3>
 <p>You must write your OpenAI API key in the "YOUR_OPENAI_API_KEY" field</p>
 <h3>VOICE</h3>
 <pre>
-alloy , echo , fable , onyx , nova , and shimmer
+  alloy , echo , fable , onyx , nova , shimmer
 </pre>
 <p>OpenAI voiceover alternatives</p>
 <h3>LANGUAGE</h3>
