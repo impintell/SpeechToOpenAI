@@ -1,4 +1,14 @@
-#<h2>Speech To OpenAI</h2>
+<h2>Speech To OpenAI</h2>
+<h3>Speech To Text => ChatGPT => Text To Speech</h3>
+<p>Node.js, Express, Cors, Java Script</p>
+<p>With this illustration, you can reinforce the chatting environment by talking to ChatGPT</p>
+<h3>API's</h3>
+<ul>
+  <li>Google Speech To Text</li>
+  <li>OpenAI Chat Completion API</li>
+  <li>OpenAI Text To Speech API</li>
+</ul>
+
 <h3>Installation</h3>
 <p>Go to your Visual Studio solution Explorer area</p>
 <p>Right click on solution name</p>
