@@ -4,8 +4,8 @@
 <p>Right click on solution name</p>
 <p>Select "Open with Terminal"</p>
 <p>Type this command on terminal</p>
-<code>npm install</code>
+<pre>npm install</pre>
 <p>Start project with "Start" button or type this command</p>
-<code>node app.js</code>
+<pre>node app.js</pre>
 
 
