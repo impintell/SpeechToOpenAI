@@ -4,17 +4,18 @@
 <p>With this illustration, you can reinforce the chatting environment by talking to ChatGPT</p>
 <h3>API's</h3>
 <ul>
-  <li>Google Speech To Text</li>
+  <li>Google Speech To Text API</li>
   <li>OpenAI Chat Completion API</li>
   <li>OpenAI Text To Speech API</li>
 </ul>
 
 <h3>Installation</h3>
-<p>Go to your Visual Studio solution Explorer area</p>
+<p>Go to your Visual Studio Solution Explorer area</p>
 <p>Right click on solution name</p>
 <p>Select "Open with Terminal"</p>
-<p>Type this command on terminal</p>
+<p>Type this command on Developer Powershell</p>
 <pre>npm install</pre>
+<p>When you run this command, a directory called "node_modules" is created in the project root directory and the required modules are saved in this directory. You can also see the modules installed under npm in Solution Explorer. You do not need to include the "node_modules" directory in your project.</p>
 <p>Start project with "Start" button or type this command</p>
 <pre>node app.js</pre>
 <h3>Regulation</h3>
@@ -52,6 +53,10 @@
   <li>When Text To Speech ends, it opens the microphone and starts Speech To Text again</li>
   <li>If this is blocked, ChatGPT will start chatting by itself. This may seem funny at first, but can become annoying after a while</li>
 </ul>
+<h2>Structure</h2>
+<p>Server side : app.js</br>
+Client side : index.js</p>
+<p></p>
 
 
 
