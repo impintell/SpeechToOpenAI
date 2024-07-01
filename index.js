@@ -166,17 +166,16 @@ async function requestMicrophoneAccess() {
 
     // Tarayýcý getUserMedia API'sini destekliyor mu kontrol et
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-        // Mikrofon eriþimi talep et
+        // Request microphone access permission
         navigator.mediaDevices.getUserMedia({ audio: true })
             .then(function (stream) {
-                // Eriþim izni verildi
+                // Access granted
                 status.innerText = "Mikrofon izni verildi.";
-                // Mikrofon akýþýný durdur (isteðe baðlý, sadece izin almak için kullanýyoruz)
+                // Stop microphone streaming (optional, we only use it to get permission)
                 stream.getTracks().forEach(track => track.stop());
             })
             .catch(function (err) {
-                // Eriþim izni reddedildi
-                //status.innerText = "Mikrofon izni reddedildi: " + err.message;
+                // Access denied
             });
     } else {
         status.innerText = "Tarayýcýnýz mikrofon izni özelliðini desteklemiyor.";
