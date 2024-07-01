@@ -164,13 +164,13 @@ async function addSystemText(newText) {
 async function requestMicrophoneAccess() {
     const status = document.getElementById('status');
 
-    // Tarayýcý getUserMedia API'sini destekliyor mu kontrol et
+    // Check if the browser supports the getUserMedia API
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         // Request microphone access permission
         navigator.mediaDevices.getUserMedia({ audio: true })
             .then(function (stream) {
                 // Access granted
-                status.innerText = "Mikrofon izni verildi.";
+                status.innerText = "Microphone Access granted";
                 // Stop microphone streaming (optional, we only use it to get permission)
                 stream.getTracks().forEach(track => track.stop());
             })
@@ -178,7 +178,7 @@ async function requestMicrophoneAccess() {
                 // Access denied
             });
     } else {
-        status.innerText = "Tarayýcýnýz mikrofon izni özelliðini desteklemiyor.";
+        status.innerText = "Your browser does not support the microphone permission feature";
     }
 }
 
