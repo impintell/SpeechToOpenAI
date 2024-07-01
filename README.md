@@ -20,7 +20,7 @@
 <h3>Regulation</h3>
 <p>app.json</p>
 <pre>
-  {
+{
     "OPENAIAPI": "YOUR_OPENAI_API_KEY",
     "VOICE": "onyx",
     "LANGUAGE": "en-GB",
@@ -30,14 +30,29 @@
 <h3>OPENAIAPI</h3>
 <p>You must write your OpenAI API key in the "YOUR_OPENAI_API_KEY" field</p>
 <h3>VOICE</h3>
+<p>The voice to use when generating the audio. Supported voices are :</p>
 <pre>
   alloy , echo , fable , onyx , nova , shimmer
 </pre>
-<p>OpenAI voiceover alternatives</p>
+
 <h3>LANGUAGE</h3>
 <p>You should edit the "LANGUAGE" field according to your language</p>
 <p>This field is important for the Google Speech To Text API</p>
 <p>There is no language parameter for the OpenAI Text to Speech API</p>
 <p>OpenAI will detect the language itself</p>
 <h3>SYSTEMMESSAGE</h3>
-<p>You can change the job description of the ChatGPT AI model according to your wishes.</p>
+<p>You can change the job description of the ChatGPT AI model according to your wishes</p>
+<h2>Important Notes</h2>
+<ul>
+  <li>The app has only been tested with Google Chrome</li>
+  <li>When the application runs, Google Chrome will ask for permission to access your microphone, you should confirm this request</li>
+  <li>If you approve this request but the app cannot hear you, you must grant your browser permission for microphone access in Windows settings/permissions</li>
+  <li>Speech To Text has a timeout period. After this time, it stops and starts again. In this way, continuous listening is provided</li>
+  <li>When the app is running Text To Speech, it turns off the microphone and stops Speech To Text</li>
+  <li>When Text To Speech ends, it opens the microphone and starts Speech To Text again</li>
+  <li>If this is blocked, ChatGPT will start chatting by itself. This may seem funny at first, but can become annoying after a while</li>
+</ul>
+
+
+
+
