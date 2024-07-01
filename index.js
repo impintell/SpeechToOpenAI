@@ -106,7 +106,9 @@ async function sendChatRequest(message) {
 
         const data = await response.json();
         const responseText = data.choices[0].message.content;
+        // We send the response returned from ChatGPT to the Text To Speech API
         await sendSpeechRequest(responseText);
+        // We send the text message returned from ChatGPT to index.html
         await addSystemText(responseText);
         console.log('System : ', responseText);
     } catch (error) {
@@ -139,6 +141,7 @@ async function sendSpeechRequest(speechmessage) {
 
         const arrayBuffer = await response.arrayBuffer();
         const audioBlob = new Blob([arrayBuffer], { type: 'audio/wav' });
+        // We send the blob audio returned from the OpenAI Text To Speech API to the player
         playAudio(audioBlob);
     } catch (error) {
         console.error('OpenAI : ', error);
@@ -161,22 +164,22 @@ async function addSystemText(newText) {
 async function requestMicrophoneAccess() {
     const status = document.getElementById('status');
 
-    // Tarayýcý getUserMedia API'sini destekliyor mu kontrol et
+    // TarayÃ½cÃ½ getUserMedia API'sini destekliyor mu kontrol et
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-        // Mikrofon eriþimi talep et
+        // Mikrofon eriÃ¾imi talep et
         navigator.mediaDevices.getUserMedia({ audio: true })
             .then(function (stream) {
-                // Eriþim izni verildi
+                // EriÃ¾im izni verildi
                 status.innerText = "Mikrofon izni verildi.";
-                // Mikrofon akýþýný durdur (isteðe baðlý, sadece izin almak için kullanýyoruz)
+                // Mikrofon akÃ½Ã¾Ã½nÃ½ durdur (isteÃ°e baÃ°lÃ½, sadece izin almak iÃ§in kullanÃ½yoruz)
                 stream.getTracks().forEach(track => track.stop());
             })
             .catch(function (err) {
-                // Eriþim izni reddedildi
+                // EriÃ¾im izni reddedildi
                 //status.innerText = "Mikrofon izni reddedildi: " + err.message;
             });
     } else {
-        status.innerText = "Tarayýcýnýz mikrofon izni özelliðini desteklemiyor.";
+        status.innerText = "TarayÃ½cÃ½nÃ½z mikrofon izni Ã¶zelliÃ°ini desteklemiyor.";
     }
 }
 
@@ -188,6 +191,7 @@ async function playAudio(audioBlob) {
     // Turn the microphone back on when the sound is finished
     audio.addEventListener('ended', () => {
         console.log('Audio ended, starting recognition...');
+        // When the player finishes playing the audio, we turn on the microphone and start Recognition
         ismicon = 1;
         recognition.start();
         unmuteMicrophone();
@@ -202,7 +206,7 @@ async function initMicrophone() {
     const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
     microphone = audioContext.createMediaStreamSource(stream);
     gainNode = audioContext.createGain();
-    gainNode.gain.value = 1; // Varsayýlan ses seviyesi
+    gainNode.gain.value = 1; // VarsayÃ½lan ses seviyesi
 
     microphone.connect(gainNode).connect(audioContext.destination);
 }
@@ -218,7 +222,7 @@ async function muteMicrophone() {
 // Microphone unmute
 async function unmuteMicrophone() {
     if (gainNode) {
-        gainNode.gain.value = 1; // Mikrofonu aç
+        gainNode.gain.value = 1; // Mikrofonu aÃ§
         console.log('Microphone unmuted');
     }
 }
